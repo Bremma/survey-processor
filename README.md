@@ -6,6 +6,7 @@ Directions to use this script. Orinally developed for Cats/Pets of MAGFest, so s
 Requirements:
 - .csv file with List of Names in Col2 and Gdrive Links in Col3 (or adjust the script)
 - https://github.com/wkentaro/gdown for sanely downloading files so the images can be renamed with the right exension (because Windows and possibly also OBS)
+- Ensure no files with "-" are in the same directory as the pull script! It messes up the logic because I can't anticipate the image extensions otherwise.
 
 Steps:
 1. Trim CSV to columns and rows wanted
