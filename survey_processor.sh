@@ -30,7 +30,6 @@ do
    echo $col2 " | " $col3
    echo $col2 | tr -d '"' >> names
    echo "" >> names
-   echo "" >> names
    echo gdown --fuzzy $col3 >> pull.sh
    OUT="EXT=\`file *-*| awk -F':' '{ print \$1 }' | awk -F'.' '{ print \$NF }'\`"
    echo $OUT >> pull.sh
