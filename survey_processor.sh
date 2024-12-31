@@ -18,11 +18,11 @@ COUNTER=3
 
 #While processed.csv has lines,
 # print name and url for visibility
-# print names on a line with 2 empty lines for separation
+# print names on a line with 1 empty line for separation
 # generate pull.sh with the commands:
 #   gdown --fuzzy <raw gdrive link> (returns file named <filename> - <submitter name>
 #   EXT=`file *-*| awk -F':' '{ print $1 }' | awk -F'.' '{ print $NF }'` (sets EXT env variable to file's extension)
-#   mv *.$EXT processed/<COUNTER>.$EXT
+#   mv *.$EXT processed/<COUNTER>.$EXT (only one file with a - and extension should exist in the folder at a time)
 
 
 while IFS=',' read -r col1 col2 col3
